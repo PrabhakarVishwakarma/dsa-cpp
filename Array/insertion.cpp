@@ -14,6 +14,8 @@ int main(){
     arr.insert(arr.begin(),element);
     cout<<"\nArray after insertion\n";
 
+    arr.insert(arr.end(),60); // it will insert the element at the end of the array.
+
     for (int i = 0; i<arr.size(); i++){
         cout<<arr[i]<<" ";
     }
