@@ -113,6 +113,48 @@ public:
         }
         return - 1;
     }
+
+    void pop_front() {
+        if (head == NULL) {
+            cout << "LL is empty\n";
+            return;
+        }
+
+        Node* temp = head;
+        head = head->next;
+
+        temp->next = NULL;
+        delete temp;
+
+        if (head == NULL) {
+            tail = NULL;
+        }
+    }
+
+    void pop_back() {
+        if (head == NULL) {
+            cout << "LL is empty\n";
+            return;
+        }
+
+        // Only one node
+        if (head == tail) {
+            delete head;
+            head = tail = NULL;
+            return;
+        }
+
+        Node* temp = head;
+
+        while (temp->next != tail) {
+            temp = temp->next;
+        }
+
+        delete tail;
+
+        tail = temp;
+        tail->next = NULL;
+    }
     void printLL(){
         Node* temp = head;
 
