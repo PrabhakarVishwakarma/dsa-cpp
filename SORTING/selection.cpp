@@ -13,7 +13,7 @@ void selectionSort(int arr[],int n){
     }
 }
 int main(){
-    int n = 6;
+    int n = 7;
     int arr[] = {5,3,1,9,16,5,4};
     selectionSort(arr,n);
     for(int i = 0; i < n; i++){
