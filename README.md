@@ -1,1 +1,1 @@
-Array completed 
+Array completed.
