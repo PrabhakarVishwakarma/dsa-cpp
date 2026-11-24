@@ -4,7 +4,7 @@ using namespace std;
 void printNumber(int n){ // recursive function
     if(n == 1){
         cout<<"1\n";
-        return;
+        return; // it is used for backtracking 
     }
     cout<< n<<" ";
     printNumber(n-1);
